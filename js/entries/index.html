@@ -1,0 +1,8 @@
+<h2>WDI grams:</h2>
+<div data-ng-repeat="entry in EntriesIndexViewModel.entries">
+  <a data-ui-sref="entryShow({id: entry.id})">
+    <img data-ng-src="{{entry.photo_url}}">
+    <p>{{entry.author}}</p>
+    <p>{{entry.body}}</p>
+  </a>
+</div>

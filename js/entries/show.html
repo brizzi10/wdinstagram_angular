@@ -1,0 +1,11 @@
+<img data-ng-src="{{EntriesShowViewModel.entry.photo_url}}">
+<p>{{EntriesShowViewModel.entry.author}}</p>
+<p>{{EntriesShowViewModel.entry.body}}</p>
+
+<form>
+  <input placeholder="Author" data-ng-model="EntriesShowViewModel.entry.author">
+  <input placeholder="Body" data-ng-model="EntriesShowViewModel.entry.body">
+  <input placeholder="Photo Url" data-ng-model="EntriesShowViewModel.entry.photo_url">
+  <button data-ng-click="EntriesShowViewModel.update()">Update</button>
+  <button data-ng-click="EntriesShowViewModel.delete()">Delete</button>
+</form>
